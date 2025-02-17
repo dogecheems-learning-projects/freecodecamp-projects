@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umbrella Orgs | Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">ACOMSS Umbrella Organizations | Survey Form</h1>
+    <p id="description">
+        In this form, you will be asked whether you would like to join under an umbrella organization inside Adamson Computer Science Society.
+        The list of umbrella organizations in ACOMSS are as follows:<br>
+        <br>
+        <strong>P.U.L.S.E.: </strong>This organization is a community dedicated to empowering aspiring machine 
+        learning and software engineers.
+        <br>
+        <br>
+        <strong>OPUS: </strong>This organization is responsible for the editorial endeavors of the Adamson 
+        Computer Science Society. A collaborative team of young creatives specializing in crafting 
+        publications like posters, brochures, infographics, pamphlets, and literary works.
+        <br>
+        <br>
+        <strong>Haraya: </strong>This organization is responsible for event coverage within the ACOMSS 
+        department through photography and videography. Comprising diverse creatives in 
+        Multimedia Arts fields such as photography, videography, and video editing, this 
+        organization captures the essence of events.
+    </p>
+    <form id="survey-form">
+        <div class="name-form">
+            <label id="name-label" for="name">Name</label>
+            <br>
+            <input type="text" name="name" id="name" class="form-control" placeholder="Enter your Name here" required>
+        </div>
+        <br>
+        <div class="email-form">
+            <label id="email-label" for="email">E-mail</label>
+            <br>
+            <input type="email" name="email" id="email" class="form-control" placeholder="Enter your E-mail here" required>
+        </div>
+        <br>
+        <div class="age-form">
+            <label id="number-label" for="age">Age</label>
+            <br>
+            <input id="number" type="number" name="age" min="17" max="100" class="form-control" placeholder="Enter your Age here">
+        </div>
+        <br>
+        <div>
+            <label for="year-level">Year Level</label>
+            <br>
+            <select id="dropdown" name="year-level" class="form-control">
+                <option value="" disabled selected>Enter Year Level</option>
+                <option value="first-year">1st Year</option>
+                <option value="second-year">2nd Year</option>
+                <option value="third-year">3rd Year</option>
+                <option value="fourth-year">4th Year</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="position">Which position would you like to take?</label> <br>
+            <input name="position" id="executive" value="executive" type="radio">Executive <br>
+            <input name="position" id="executive" value="executive" type="radio">Member
+        </div>
+        <br>
+        <div>
+            <label for="uorg-chosen">Choose which umbrella organization(s) you would like to join:</label>
+            <br>
+            <input name="uorg-chosen" id="pulse-uorg" value="pulse" type="checkbox">P.U.L.S.E.
+            <br>
+            <input name="uorg-chosen" id="opus-uorg" value="opus" type="checkbox">OPUS
+            <br>
+            <input name="uorg-chosen" id="haraya" value="haraya" type="checkbox">Haraya
+        </div>
+        <br>
+        <textarea id="comments-area" name="comments-area" placeholder="Enter your comments here."></textarea>
+        <br>
+        <button id="submit" type="submit">Submit</button>
+    </form>
+</body>
+</html>
